@@ -1,24 +1,17 @@
 /* Estilos generales */
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f0f0f0; /* Cambiar según tu preferencia */
 }
-
 .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-
-
-
-
 /* Estilos del encabezado */
-
 header {
     background-color: #000000; /* Color de fondo del encabezado */
     color: #fff; /* Color del texto del encabezado */
@@ -50,9 +43,7 @@ header img {
     margin-left: auto; /* Mover la imagen al extremo derecho */
 }
 
-
 /* Estilos de la sección del inicio */
-
 .inicio {
     display: flex; /* Utilizar el modelo de caja flexible */
     flex-direction: column; /* Colocar los elementos en columna */
@@ -61,20 +52,18 @@ header img {
     height: 100vh; /* Altura del 100% de la ventana */
     text-align: center; /* Centrar el texto horizontalmente */
     background-color: #A499BE;
+    font-family: 'Goudy Old Style', 'Garamond', 'Big Caslon', 'Times New Roman', 'serif';
+    color:#fff ;
+    font-size: x-large;
 }
 
 .inicio h1 {
-    margin-bottom: 20px; /* Espaciado inferior para separar el título del párrafo */
+    margin-bottom: 50px; /* Espaciado inferior para separar el título del párrafo */
+    font-size: xx-large;
+    font-weight: bolder;
 }
 
-
-
-
-
-
-
 /* Estilos de la sección de la galería */
-
 .galeria {
     padding: 20px;
     overflow-x: auto; /* Permitir desplazamiento horizontal */
@@ -86,50 +75,90 @@ header img {
     align-items: center;/* Centrado vertical */
     background-color: #7B506F;
 }
-.galeria div {
-    margin: 10px;
-}
 
 .titulogaleria h3 {
     font-size: 24px;
     text-align: center;
+    color: #fff;
+    font-family: 'Goudy Old Style', 'Garamond', 'Big Caslon', 'Times New Roman', 'serif';
 }
 
+.tarjeta h3 {
+    color: #000;
+}
 
 .imagen-tarjeta {
     max-width: 100%;
     height: 400px;
+    width: auto;
+    background-color:#fff;
 }
 
 .tarjeta {
-    border: 3px solid #000000;
+    border: 3px solid #fff;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
     margin-bottom: 20px;
+    display: none;
+}
+.tarjeta.active{
+    display: block;
 }
 
 .tarjeta img {
     width: 100%;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    width: 400px;
+    object-fit: contain;
 }
 
 .tarjeta .descripcion {
-    padding: 10px;
+    background-color: #fff;
+    color:#000;
+    font-family: 'Goudy Old Style', 'Garamond', 'Big Caslon', 'Times New Roman', 'serif';
+    
 }
 
 .descripcion {
     padding: 10px;
-    height: auto; /* Altura de la caja de texto */
-    
+    height: auto; 
+    text-align: center;
 }
 
+/* Estilos para el carrusel */
+.container {
+    display: flex;
+    align-items: center; /* Centrar los elementos verticalmente */
+    width: 400px;
+}
 
+.carousel {
+    overflow: hidden; /* Ocultar contenido que no cabe en el contenedor */
+    width: 400px; /* Ajusta el ancho del carrusel */
+    transition: transform 0.5s ease-in-out; /* Ajusta el tiempo y el tipo de transición según tu preferencia */
+}
 
+.tarjeta {
+    flex-shrink: 0; /* Evita que se encoja */
+    width: 99%;
+    display: block;
+}
 
+.tarjeta.active {
+    display: none;
+}
+
+/* Estilos para los botones */
+#prev, #next {
+    background-color: #333; /* Color de fondo */
+    color: #fff; /* Color de texto */
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
 
 /* Estilos de la sección de la red */
-
 .mired {
     background-color: #000;
     padding: 20px;
@@ -140,6 +169,7 @@ header img {
     margin-top: 0;
     color: #fff;
 }
+
 
 
 

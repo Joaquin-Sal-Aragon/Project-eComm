@@ -17,7 +17,7 @@
         <img src="/img/barco-vikingo.png" alt="" width="70">
     </header>
     <section class="inicio">
-        <h1>Hudson's Gallery</h1>
+        <h1 id="inicio h1">Hudson's Gallery</h1>
             <p>Esta es la galería de fotos de Joaquín Sal Aragón.<br>
                 Brinda una experiencia unica llevandonos a lo recondito <br> 
                 de las culturas guerreras que se encuentran a lo largo <br> 
@@ -26,51 +26,131 @@
     </section>
     <section class="galeria">
         <div class="titulogaleria">
-            <h3>Imágenes</h3>
-            <div class="container">
-                <div class="tarjeta">
-                    <img class="imagen-tarjeta" src="/img/vikingo.png" alt="">
-                    <div class="descripcion">
-                        <h3>Vikingo</h3>
-                        <p>Descripción del guerrero Vikingo...</p>
+            <h3>Imágenes</h3> <!-- encerrar div para el h3 -->
+            <div class="carousel">
+                <button id="prev">Anterior</button>
+                <div class="container">
+                    <div class="tarjeta">
+                        <img class="imagen-tarjeta" src="/img/vikingo.png" alt="">
+                        <div class="descripcion">
+                            <h3>Vikingo</h3>
+                            <p>
+                                Los vikingos fueron un grupo de exploradores, comerciantes y guerreros provenientes de Escandinavia (actuales Noruega, Suecia y Dinamarca) que estuvieron activos desde finales del siglo VIII hasta el siglo XI, durante lo que se conoce como la era vikinga.
+                                
+                                Características de los guerreros vikingos:
+                                Valientes y feroces: Los guerreros vikingos eran conocidos por su valentía y ferocidad en el campo de batalla. Eran combatientes temidos por su capacidad de lucha y resistencia.
+                                
+                                Armas y armadura: Los guerreros vikingos utilizaban una variedad de armas como espadas, hachas, lanzas y escudos. Su armadura generalmente consistía en cascos y cotas de malla, aunque no todos los guerreros tenían acceso a armaduras completas.
+                                
+                                Tácticas de combate: Los vikingos utilizaban tácticas de combate efectivas, como emboscadas, incursiones y ataques sorpresa. También eran conocidos por su habilidad para organizarse en formaciones cerradas.
+                                
+                                Barcos y exploración: Los vikingos eran navegantes hábiles, conocidos por sus barcos largos (drakkars) que les permitían explorar y atacar regiones lejanas. Esto les llevó a establecerse en varias partes de Europa, incluyendo el Reino Unido, Irlanda, Francia e incluso América del Norte.
+                                
+                                Cultura guerrera: Los vikingos honraban a los guerreros caídos en batalla y creían en una vida después de la muerte en el Valhalla, donde los guerreros muertos en combate se unían a Odin.
+                                
+                                Vida cotidiana: Aunque los vikingos son más conocidos por sus incursiones, también eran agricultores y comerciantes. Tenían una sociedad compleja con leyes y normas que regulaban su vida diaria.
+                                
+                                En resumen, los guerreros vikingos fueron figuras icónicas de la historia europea, conocidos por su destreza en la guerra, sus habilidades de navegación y su papel en la expansión y exploración de nuevos territorios.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <img class="imagen-tarjeta" src="/img/samurai.png" alt="">
+                        <div class="descripcion">
+                            <h3>Samurai</h3>
+                            <p>Los samuráis fueron una clase guerrera en Japón que surgió durante el período Heian (794-1185) y estuvo activa hasta finales del siglo XIX. Eran conocidos por su lealtad, disciplina y habilidad en la batalla, así como por seguir un código de conducta conocido como Bushido o "camino del guerrero," que enfatizaba el honor, la valentía y la sinceridad.
+                                Características de los guerreros samuráis:
+                                Código de honor: El Bushido dictaba su comportamiento, incluyendo lealtad a su señor feudal y disposición a morir por él.
+                                Armas: Los samuráis eran hábiles con la katana, una espada curva que era su arma principal, así como con otras armas como el arco y la lanza.
+                                Formación: Recibían una intensa formación en artes marciales y habilidades militares desde una edad temprana.
+                                Vida diaria: Además de ser guerreros, participaban en la administración y el gobierno de sus territorios, y muchos eran también poetas, artistas y filósofos.
+                                En resumen, los samuráis eran guerreros expertos que formaban parte de una clase social y militar influyente en la historia de Japón, y su legado cultural perdura hasta hoy.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <img class="imagen-tarjeta" src="/img/shaolin.png" alt="">
+                        <div class="descripcion">
+                            <h3>Shaolin</h3>
+                            <p>Los guerreros Shaolin son monjes entrenados en el arte marcial chino conocido como Kung Fu Shaolin. Estos monjes provienen del Templo Shaolin, ubicado en la provincia de Henan, China, y son conocidos por su disciplina, habilidades marciales y enfoque espiritual.
+
+                                Características de los guerreros Shaolin:
+                                Habilidades marciales: Los monjes Shaolin son expertos en Kung Fu Shaolin, una forma de arte marcial que combina técnicas de combate con ejercicios de salud y meditación.
+                                
+                                Disciplina y entrenamiento: Los monjes entrenan intensamente en artes marciales desde jóvenes, desarrollando habilidades de combate cuerpo a cuerpo, manejo de armas y técnicas de defensa personal.
+                                
+                                Espiritualidad: El entrenamiento Shaolin está profundamente relacionado con la práctica budista, ya que los monjes siguen principios espirituales y filosóficos en su vida diaria.
+                                
+                                Fuerza y agilidad: Los guerreros Shaolin son famosos por su fuerza, agilidad y resistencia física, logrando hazañas impresionantes en sus demostraciones de artes marciales.
+                                
+                                En resumen, los guerreros Shaolin son monjes budistas entrenados en Kung Fu Shaolin, conocidos por su destreza en las artes marciales y su enfoque en el desarrollo espiritual y físico.</p>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <img class="imagen-tarjeta" src="/img/espartano.png" alt="">
+                        <div class="descripcion">
+                            <h3>Espartano</h3>
+                            <p>Los guerreros espartanos eran soldados de la antigua ciudad-estado griega de Esparta, conocida por su sociedad militarista y su disciplina extrema.
+
+                                Características de los guerreros espartanos:
+                                Entrenamiento desde jóvenes: Los espartanos recibían entrenamiento militar riguroso desde una edad temprana, comenzando a los siete años en el sistema de educación llamado "agoge."
+                                
+                                Tácticas de combate: Los espartanos eran expertos en formaciones militares, especialmente la falange, una formación compacta de soldados armados con lanzas y escudos.
+                                
+                                Resistencia y valentía: Eran conocidos por su resistencia física y su valentía en la batalla. Se les inculcaba la importancia de luchar hasta el final y nunca retroceder.
+                                
+                                Lealtad a la polis: Los espartanos valoraban la lealtad a su ciudad-estado y estaban dispuestos a sacrificarse por ella en el campo de batalla.
+                                
+                                En resumen, los guerreros espartanos eran conocidos por su entrenamiento intensivo, disciplina y valentía, lo que los convirtió en una de las fuerzas militares más temidas de la antigua Grecia.</p>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <img class="imagen-tarjeta" src="/img/indio.png" alt="">
+                        <div class="descripcion">
+                            <h3>Indio</h3>
+                            <p>Los guerreros indígenas de América abarcan una variedad de tribus y culturas con distintas tradiciones y estilos de vida. Dependiendo de la región y la tribu, las características de los guerreros pueden variar significativamente. A continuación, se ofrece una breve descripción general de los guerreros indígenas de América.
+
+                                Características de los guerreros indígenas de América:
+                                Diversidad de tribus: Los indígenas de América pertenecen a muchas tribus diferentes, cada una con sus propias costumbres y tradiciones. Algunas de las tribus más conocidas incluyen los sioux, apaches, cherokee, iroqueses, aztecas, incas y mayas, entre otros.
+                                
+                                Habilidades de combate: Los guerreros indígenas eran hábiles en diversas formas de combate, como el uso de arcos y flechas, lanzas, cuchillos y mazas. También eran expertos en tácticas de emboscada y guerrilla.
+                                
+                                Conocimiento del entorno: Los guerreros indígenas tenían un profundo conocimiento de su entorno natural, lo que les permitía usar el terreno a su favor en la batalla.
+                                
+                                Honor y valentía: Los guerreros indígenas valoraban el honor y la valentía en la batalla. Muchos luchaban para proteger a su tribu y sus tierras.
+                                
+                                Conexión espiritual: Los guerreros indígenas a menudo tenían una conexión espiritual con su entorno y creían en la protección de sus ancestros y deidades.
+                                
+                                Organización tribal: Muchas tribus tenían sistemas de gobierno y liderazgo que determinaban cómo se organizaban y luchaban en la batalla.
+                                
+                                En resumen, los guerreros indígenas de América representan una diversidad de tribus y culturas con tradiciones únicas en cuanto a sus habilidades de combate, tácticas de guerra y valores de honor y valentía..</p>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <img class="imagen-tarjeta" src="/img/militar.png" alt="">
+                        <div class="descripcion">
+                            <h3>Militar</h3>
+                            <p>Los guerreros militares de la actualidad son soldados entrenados para servir en las fuerzas armadas de sus respectivos países. Son profesionales altamente capacitados en diversas tácticas de combate y tecnologías modernas.
+
+                                Características de los guerreros militares de la actualidad:
+                                Entrenamiento avanzado: Los militares modernos reciben un entrenamiento intensivo en tácticas de combate, manejo de armas, y técnicas de supervivencia. También reciben instrucción en áreas especializadas, como inteligencia, comunicaciones y medicina de combate.
+                                
+                                Uso de tecnología: Los militares actuales utilizan tecnología de punta, como sistemas de comunicación avanzados, drones, armas de precisión y equipos de visión nocturna.
+                                
+                                Trabajo en equipo: Los soldados son entrenados para trabajar en unidades cohesivas, siguiendo órdenes y operando de manera coordinada para cumplir misiones específicas.
+                                
+                                Versatilidad: Los militares de hoy en día están preparados para enfrentarse a una variedad de situaciones, desde conflictos armados hasta operaciones de paz y ayuda humanitaria.
+                                
+                                Ética y disciplina: Los guerreros militares están sujetos a códigos de conducta estrictos y a leyes internacionales de conflicto armado, que incluyen reglas de enfrentamiento y normas de trato a prisioneros y civiles.
+                                
+                                Capacitación continua: Los soldados reciben capacitación continua a lo largo de sus carreras para mantenerse al día con los avances tecnológicos y tácticos.
+                                
+                                En resumen, los guerreros militares de la actualidad son soldados profesionales altamente capacitados y versátiles, que utilizan tecnología avanzada y trabajan en equipo para llevar a cabo misiones diversas con disciplina y ética.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="tarjeta">
-                    <img class="imagen-tarjeta" src="/img/samurai.png" alt="">
-                    <div class="descripcion">
-                        <h3>Samurai</h3>
-                        <p>Descripción del guerrero Samurai...</p>
-                    </div>
-                </div>
-                <div class="tarjeta">
-                    <img class="imagen-tarjeta" src="/img/shaolin.png" alt="">
-                    <div class="descripcion">
-                        <h3>Shaolin</h3>
-                        <p>Descripción del guerrero Shaolin...</p>
-                    </div>
-                </div>
-                <div class="tarjeta">
-                    <img class="imagen-tarjeta" src="/img/espartano.png" alt="">
-                    <div class="descripcion">
-                        <h3>Espartano</h3>
-                        <p>Descripción del guerrero Espartano...</p>
-                    </div>
-                </div>
-                <div class="tarjeta">
-                    <img class="imagen-tarjeta" src="/img/indio.png" alt="">
-                    <div class="descripcion">
-                        <h3>Indio</h3>
-                        <p>Descripción del guerrero Indio...</p>
-                    </div>
-                </div>
-                <div class="tarjeta">
-                    <img class="imagen-tarjeta" src="/img/militar.png" alt="">
-                    <div class="descripcion">
-                        <h3>Militar</h3>
-                        <p>Descripción del guerrero Militar...</p>
-                    </div>
-                </div>
-            </div>
+                <button id="next">Siguiente</button>
+            </div>    
         </div>
     </section>
     <section class="mired">
